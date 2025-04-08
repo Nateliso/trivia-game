@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #5D4235, #1E96A6);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  padding: 1rem; /* Reduced for mobile */
+  text-align: center;
+}
+
+.App {
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: transparent;
+  color: white;
+}
+
+h1 {
+  font-size: 28px; /* Smaller base for mobile */
+  margin-bottom: 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 20px; /* Smaller base for mobile */
+  margin: 0 0 15px;
+  color: white;
+}
+
+.start-screen button,
+.genre-select button,
+.options button,
+.results button {
+  padding: 8px 16px; /* Slightly smaller for mobile */
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px; /* Smaller base for mobile */
+}
+
+.start-screen button {
+  background-color: #28a745;
+}
+
+.start-screen button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.start-screen button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.genre-select button:nth-child(1) {
+  background-color: #007bff;
+}
+
+.genre-select button:nth-child(2) {
+  background-color: #8b4513;
+}
+
+.genre-select button:hover {
+  opacity: 0.9;
+}
+
+.game {
+  width: 100%; /* Full-width on mobile */
+  margin: 0 auto;
+}
+
+.start-screen {
+  width: 100%; /* Full-width on mobile */
+  margin: 0 auto;
+}
+
+.start-screen input {
+  padding: 8px; /* Slightly smaller for mobile */
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px; /* Readable on mobile */
+}
+
+.options button {
+  background-color: #444;
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* Slightly smaller for mobile */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.options button:hover {
+  background-color: #555;
+  transform: scale(1.02);
+}
+
+.timer {
+  font-size: 20px; /* Smaller for mobile */
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.fade {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tablet and up (768px) */
+@media (min-width: 768px) {
+  #root {
+    max-width: 800px;
+    padding: 2rem; /* Restore original padding */
+  }
+
+  h1 {
+    font-size: 36px; /* Original size */
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 24px; /* Original size */
+    margin-bottom: 20px;
+  }
+
+  .start-screen button,
+  .genre-select button,
+  .options button,
+  .results button {
+    padding: 10px 20px; /* Original padding */
+    font-size: 16px; /* Original size */
+  }
+
+  .game {
+    max-width: 600px; /* Original cap */
+  }
+
+  .start-screen {
+    max-width: 400px; /* Original cap */
+  }
+
+  .start-screen input {
+    padding: 10px; /* Original padding */
+    margin: 10px 0;
+    font-size: 16px; /* Slightly larger */
+  }
+
+  .options button {
+    padding: 12px; /* Original padding */
+    font-size: 18px; /* Original size */
+  }
+
+  .timer {
+    font-size: 24px; /* Original size */
+    margin-bottom: 20px;
+  }
+}
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem; /* Even tighter for small screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Extra small for tiny screens */
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .start-screen button,
+  .genre-select button,
+  .options button,
+  .results button {
+    padding: 6px 12px; /* Smaller for tiny screens */
+    font-size: 12px;
+  }
+
+  .start-screen input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .options button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .timer {
+    font-size: 18px;
+  }
+}
