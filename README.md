@@ -4,7 +4,7 @@ A fast-paced trivia game where players race against a 30-second timer to answer 
 
 ## 🚀 Live Demo
 
-[View Live Project](#) https://nate-trivia.netlify.app
+https://nate-trivia.netlify.app
 
 ## 📸 Screenshots
 
