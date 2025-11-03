@@ -58,7 +58,7 @@ https://nate-trivia.netlify.app
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Nateliso/trivia-game.git
-   cd trivia-rush
+   cd quiz-game
    ```
 
 2. **Install dependencies**
@@ -118,19 +118,6 @@ trivia-rush/
 - [ ] Integrate external trivia API for unlimited questions
 - [ ] Add multiplayer mode
 - [ ] Track personal best scores with local storage
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
